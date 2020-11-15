@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:animateLayoutChanges="true"
     app:cardCornerRadius="20dp"
-    app:cardElevation="4dp"
+    app:cardElevation="6dp"
     app:cardUseCompatPadding="true">
 
     <LinearLayout
@@ -18,7 +18,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="6dp">
+            android:padding="6dp"
+            android:background="@color/white">
             <ImageView
                 android:id="@+id/iconImageView"
                 android:layout_width="70dp"
@@ -46,7 +47,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
-                    android:text="Codelia"
+                    android:text="Javi"
                     android:textColor="@android:color/black"
                     android:textSize="24sp"
                     android:textStyle="bold"/>
@@ -54,8 +55,9 @@
                     android:id="@+id/cityTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="México"
-                    android:textSize="18sp"/>
+                    android:text="Ermua"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
             <TextView
@@ -66,6 +68,7 @@
                 android:layout_marginEnd="6dp"
                 android:layout_marginRight="6dp"
                 android:text="Activo"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_alignParentRight="true"
