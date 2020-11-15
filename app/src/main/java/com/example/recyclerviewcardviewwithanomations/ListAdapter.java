@@ -1,6 +1,7 @@
 package com.example.recyclerviewcardviewwithanomations;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.view.LayoutInflater;
@@ -60,6 +61,15 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
             city = itemView.findViewById(R.id.cityTextView);
             status = itemView.findViewById(R.id.statusTextView);
             cv = itemView.findViewById(R.id.cv);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent= new Intent(context, ContenidoCardviewActivity.class);
+                    context.startActivity(intent);
+                }
+            });
+
         }
 
 
